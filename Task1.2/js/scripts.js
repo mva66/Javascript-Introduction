@@ -1,3 +1,4 @@
+//array created
 var repository = [
   { name: "Ivysaur", height: 1, weight: 13, type: ["Grass", "Poison"] },
   { name: "Nidoking", height: 1.4, weight: 62, type: ["Ground", "Poison"] },
