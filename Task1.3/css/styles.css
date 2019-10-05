@@ -1,0 +1,15 @@
+body {
+    background-color: peachpuff;
+    font-family: 'open-sans';
+    padding-top: 50px;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.pokemon {
+    font-weight: bold;
+    font-size: 20px;
+}
