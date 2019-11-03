@@ -1,0 +1,31 @@
+body {
+    background-color: peachpuff;
+    font-family: 'open-sans';
+    padding-top: 30px;
+}
+
+h1 {
+    font-size: 32px;
+    margin: 30px;
+}
+
+.my-class {
+    background-color: lightgrey;
+    border: none;
+    color: purple;
+    padding: 16px 32px;
+    text-decoration: none;
+    font-weight: bold;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: 2px solid black;
+    font-family: inherit;
+}
+
+li {
+    list-style-type: none;
+}
