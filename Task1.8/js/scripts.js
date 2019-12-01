@@ -67,29 +67,25 @@ var pokemonRepository = (function() {
   // show the modal content
   function showModal(item) {
     var $modalContainer = document.querySelector("#modal-container");
-    //clear existing content of the model
     $modalContainer.innerHTML = "";
-    //creating div element in DOM
     var modal = document.createElement("div");
-    //adding class to div DOM element
     modal.classList.add("modal");
-    //creating closing button in modal content
     var closeButtonElement = document.createElement("button");
+
     closeButtonElement.classList.add("modal-close");
     closeButtonElement.innerText = "Close";
-    // adding event listener to close modal when clicked on button
     closeButtonElement.addEventListener("click", hideModal);
-    //creating element for name in modal content
+
     var nameElement = document.createElement("h1");
     nameElement.innerText = item.name;
-    // creating img in modal content
+
     var imageElement = document.createElement("img");
     imageElement.classList.add("modal-img");
     imageElement.setAttribute("src", item.imageUrl);
-    //creating element for height in modal content
+
     var heightElement = document.createElement("p");
     heightElement.innerText = "height : " + item.height;
-    //creating element for weight in modal content
+
     var weightElement = document.createElement("p");
     weightElement.innerText = "weight : " + item.weight;
 
@@ -101,7 +97,7 @@ var pokemonRepository = (function() {
     modal.appendChild(weightElement);
 
     $modalContainer.appendChild(modal);
-    //adds class to show the modal
+
     $modalContainer.classList.add("is-visible");
   }
   //hides modal when clicked on close button
@@ -109,7 +105,7 @@ var pokemonRepository = (function() {
     var $modalContainer = document.querySelector("#modal-container");
     $modalContainer.classList.remove("is-visible");
   }
-  //hides modal when clicked on ESC on keyboard
+
   window.addEventListener("keydown", e => {
     var $modalContainer = document.querySelector("#modal-container");
     if (
@@ -138,7 +134,6 @@ var pokemonRepository = (function() {
   };
 })();
 pokemonRepository.loadList().then(function() {
-  // Now the data is loaded!
   pokemonRepository.getAll().forEach(function(pokemon) {
     pokemonRepository.addListItem(pokemon);
   });
