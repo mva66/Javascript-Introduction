@@ -48,7 +48,6 @@ var pokemonRepository = (function() {
     var url = item.detailsUrl;
     return $.ajax(url)
       .then(function(details) {
-        // Now we add the details to the item
         item.imageUrl = details.sprites.front_default;
         item.height = details.height;
         item.weight = details.weight;
