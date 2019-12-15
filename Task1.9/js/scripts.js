@@ -91,13 +91,9 @@ var pokemonRepository = (function() {
     }
   });
   //hides modal if clicked outside of it
-  var $modalContainer = document.querySelector("#modal-container");
-  $modalContainer.addEventListener("click", e => {
-    var target = e.target;
-    if (target === $modalContainer) {
-      hideModal();
-    }
-  });
+  var $modalContainer = $("#modal-container");
+  $modalContainer.on("click", hideModal);
+
   return {
     add: add,
     getAll: getAll,
