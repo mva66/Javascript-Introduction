@@ -25,12 +25,6 @@ body {
     background-color: antiquewhite;
 }
 
-.heading {
-    text-align: left;
-    margin-bottom: 20px;
-    padding: 30px;
-}
-
 .pokemon-pic {
     display: block;
     margin-left: auto;
